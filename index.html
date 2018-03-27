@@ -1,181 +1,317 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <title>Главная</title> 
+    <meta charset="utf-8">
+    <title>Резюме Котлового Тимофея на front-end developer</title>
+    <meta name="viewport" content="width=device.width,initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
-	  <div class="wrapper">
-		<header class="header">
-			<div class="header__inner">
-				<nav class="header__nav nav">
-					<a class="nav__logo-link">
-					</a>
-					<ul class="nav__list">
-						<li class="nav__item nav__item-first">
-							<a class="nav__link nav__link--active elem" href="info.html">Информация</a>
-						</li>
-						<li class="nav__item nav__item-second">
-							<a class="nav__link elem" href="foto-video.html">Фото и видео</a>
-						</li>
-						<li class="nav__item nav__item-third">
-							<a class="nav__link elem" href="map.html">Карта штата</a>
-						</li>
-						<li class="nav__item nav__item-fourth">
-							<a class="nav__link elem" href="catalog.html">Гостиницы</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<main class="content">
-			<div class="header__background-logo logo">
-			</div>
-			<div class="header__wrapper">
-				<div class="wrapper__title">
-					<h1 class="title__slogan">Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
-					<p class="title__text">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
-				</div>
-			</div>
-			<section class="content__nav info-nav">
-				<div class="info-nav__block">
-					<div class="info-nav__text">
-						<h2 class="info-nav__title">Настоящий городок</h2>
-						<p class="info-nav__hr">- №1 -</p>
-						<p class="info-nav__desc">Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
-					</div>
-				</div>
-				<div class="info-nav__photo photo">
-				</div>
-			</section>
-			<section class="content__header info-header">
-				<div class="info-header__housing">
-					<div class="info-header__icon icon__housing">
-					</div>
-					<h3 class="info-header__title">Жилье</h3>
-					<p class="info-header__text">Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
-				</div>
-				<div class="info-header__food">
-					<div class="info-header__icon icon__food">
-					</div>
-					<h3 class="info-header__title">Еда</h3>
-					<p class="info-header__text">Всегда, заказывайте фирменный бургер, Вы&nbsp;не&nbsp;разочаруетесь!</p>
-				</div>
-				<div class="info-header__souvenir">
-					<div class="info-header__icon icon__souvenir">
-					</div>
-					<h3 class="info-header__title">Сувениры</h3>
-					<p class="info-header__text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
-				</div>
-			</section>
-			<section class="content__main info-main">
-				<div class="info-main__photo">
-				</div>
-				<div class="info-main__text">
-					<h2 class="info-main__title">Там есть Мост Дьявола</h2>
-					<p class="info-main__hr">— №2 —</p>
-					<p class="info-main__desc">Да, по&nbsp;нему можно пройтись! Если конечно<br>Вы осмелитесь</p>
-				</div>
-			</section>
-			<section class="content__footer info-footer">
-				<div class="info-footer__S">
-					<h2 class="info-footer__title">Небольшая площадь</h2>
-					<p class="info-footer__hr">— №3 —</p>
-					<p class="info-footer__desc">Все достопримечательности находятся очень близко</p>
-				</div>
-				<div class="info-footer__road">
-					<h2 class="info-footer__title">Красивая дорога</h2>
-					<p class="info-footer__hr">— №4 —</p>
-					<p class="info-footer__desc">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>				
-				</div>
-				<div class="info-footer__tourist">
-					<h2 class="info-footer__title">Мало туристов</h2>
-					<p class="info-footer__hr">— №5 —</p>
-					<p class="info-footer__desc">Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
-				</div>
-			</section>
-			<section class="content__travel travel">
-				<div class="travel__text">
-					<h2 class="travel__title">Заинтересовались?</h2>
-					<p class="travel__desc">Укажите предполагаемые даты поездки,<br> и&nbsp;мы&nbsp;покажем Вам лучшие предложения гостиниц в&nbsp;Седоне</p>
-				</div>			
-				<div class="travel__search">
-					<button class="travel__btn btn" type="submit">Поиск гостиницы в Седоне</button>
-				</div>
-				<div class="travel__map map">
-				<article class="travel__hotels elem">
-					<form class="travel__info info" method="post" action="https://echo.htmlacademy.ru">
-						<div class="info__date-in in">
-							<label class="in__label" for="text-in">Дата заезда:</label>
-							<input class="in__label-text" type="text" name="date" id="text-in" placeholder="24 Апреля 2017" value="">
-							<svg class="out__img" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
-						</div>
-						<div class="info__date-out out">
-							<label class="out__label" for="text-out">Дата выезда:</label>
-							<input class="out__label-text" type="text" name="date" id="text-out" placeholder="4 Июня 2017">
-							<svg class="in__img" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
-						</div>
-						<div class="info__wrapper">
-							<div class="info__older older">
-								<label class="older__label" for="number-older">Взрослые:</label>
-								<div class="older__button">
-									<a href="#number-older" class="older__number-minus" title="Уменьшить колличество" onclick="minusCount(this); return false;">
-										<svg class="older__svg-minus" xmlns="http://www.w3.org/2000/svg" width="9.917" height="1.917" viewBox="0 0 9.917 1.917"><path d="M0 0h9.917v1.917h-9.917z"></path></svg>
-									</a>
-									<input class="older__label-numbers" type="text" name="people" id="number-older" value="2">
-									<a href="#number-older" class="older__number-plus" title="Увеличить колличество" onclick="plusCount(this); return false;">
-										<svg class="older__svg-plus" xmlns="http://www.w3.org/2000/svg" width="9.917" height="9.917" viewBox="0 0 9.917 9.917"><path d="M9.917 4h-4v-4h-1.917v4h-4v1.917h4v4h1.917v-4h4z"></path></svg>
-									</a>
-								</div>
-							</div>
-							<div class="info__kids kids">
-								<label class="kids__label" for="number-kids">Дети:</label>
-								<div class="kids__button">
-									<a href="#number-kids" class="kids__number-minus" title="Уменьшить колличество" onclick="minusCount(this); return false;">
-										<svg class="kids__svg-minus" xmlns="http://www.w3.org/2000/svg" width="9.917" height="1.917" viewBox="0 0 9.917 1.917"><path d="M0 0h9.917v1.917h-9.917z"></path></svg>
-									</a>
-									<input class="kids__label-numbers" type="text" name="people" id="number-kids" value="0">
-									<a href="#number-kids" class="kids__number-plus" title="Увеличить колличество" onclick="plusCount(this); return false;">
-										<svg class="kids__svg-plus" xmlns="http://www.w3.org/2000/svg" width="9.917" height="9.917" viewBox="0 0 9.917 9.917"><path d="M9.917 4h-4v-4h-1.917v4h-4v1.917h4v4h1.917v-4h4z"></path></svg>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="info__catalog catalog">
-							<button class="catalog__btn" type="submit">Найти</button>
-						</div>
-					</form>
-				</article> 
-					<iframe class="map__yandex" src="https://yandex.ru/map-widget/v1/?um=constructor%3A2769fe2568c5f4ca207e22e0b03454e660ceb965dc480294ae621e0ce618c207&amp;lang=ru_RU&amp;scroll=true&amp;source=constructor"></iframe>
-				</div>
-			</section>
-		</main>
-		<footer class="main-footer">
-			<div class="main-footer__wrapper">
-				<div class="main-footer__tag tag">
-					<a class="tag__link elem" href="#">#VisitSedona</a>
-				</div>
-				<div class="main-footer__social social">	
-					<a class="social__link tw__link" href="#" target="_blank" title="Наша страница в Twitter">
-						<svg class="social__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
-					</a>
-					<a class="social__link fb__link" href="#" target="_blank" title="Наша страница в Facebook">
-						<svg class="social__svg" xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
-					</a>
-					<a class="social__link yb__link" href="#" target="_blank" title="Наша страница на YouTube">
-						<svg class="social__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
-					</a>
-				</div>
-				<div class="main-footer_developer developer">
-					<p class="developer__text">Website by</p>
-					<a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss">
-						<svg class="developer__img" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85"><title>logo-htmlacademy-small1</title><path d="M44.61,26.88a2,2,0,0,0,.55-0.1v1.33a3.25,3.25,0,0,1-1.18.21,1.67,1.67,0,0,1-1.67-1,4.84,4.84,0,0,1-3.14,1.08c-1.51,0-2.91-.83-2.91-2.55,0-2.13,2-2.79,3.71-2.79a11.08,11.08,0,0,1,2.17.25v-0.3c0-1-.76-1.77-2.19-1.77a7.42,7.42,0,0,0-3,.64v-1.7a10.21,10.21,0,0,1,3.19-.55c2.36,0,3.81,1.12,3.81,3.65v3a0.54,0.54,0,0,0,.49.59h0.17Zm-6.44-1.13A1.35,1.35,0,0,0,39.63,27h0.11a3.39,3.39,0,0,0,2.41-1V24.58a9.72,9.72,0,0,0-1.81-.21c-1,0-2.16.33-2.16,1.38h0Zm12.36-6.11a5,5,0,0,1,2.57.64V22a4.08,4.08,0,0,0-2.3-.7,2.75,2.75,0,1,0,0,5.49,5,5,0,0,0,2.43-.64v1.71a6.27,6.27,0,0,1-2.76.57A4.21,4.21,0,0,1,46,24.51q0-.21,0-0.41a4.32,4.32,0,0,1,4.18-4.46h0.38Zm12.17,7.24a2,2,0,0,0,.55-0.1v1.33a3.25,3.25,0,0,1-1.18.21,1.67,1.67,0,0,1-1.67-1,4.84,4.84,0,0,1-3.14,1.08c-1.51,0-2.91-.83-2.91-2.55,0-2.13,2-2.79,3.71-2.79a11.08,11.08,0,0,1,2.17.25v-0.3c0-1-.76-1.77-2.19-1.77a7.42,7.42,0,0,0-3,.64v-1.7a10.21,10.21,0,0,1,3.19-.55c2.36,0,3.81,1.12,3.81,3.65v3a0.54,0.54,0,0,0,.49.59h0.17Zm-6.44-1.13A1.35,1.35,0,0,0,57.73,27h0.11a3.39,3.39,0,0,0,2.41-1V24.58a9.72,9.72,0,0,0-1.81-.21c-1.06,0-2.16.33-2.16,1.38h0ZM73,16V28.2H71.35V26.88a3.88,3.88,0,0,1-3.19,1.54,4.4,4.4,0,0,1,0-8.78,3.81,3.81,0,0,1,3,1.3V16H73Zm-4.53,5.22a2.76,2.76,0,1,0,0,5.52A2.86,2.86,0,0,0,71.15,25V23A2.91,2.91,0,0,0,68.49,21.27ZM79,19.64c3.31,0,4.46,2.68,3.92,5.09H76.7c0.21,1.5,1.67,2.11,3.19,2.11a6.11,6.11,0,0,0,2.64-.59v1.6a7.14,7.14,0,0,1-3,.57C77,28.42,74.78,27,74.78,24a4.18,4.18,0,0,1,4-4.39H79Zm0.09,1.54a2.28,2.28,0,0,0-2.44,2.1v0.06H81.3A2,2,0,0,0,79.13,21.18Zm5.73,7V19.87h1.65v1a3.81,3.81,0,0,1,2.78-1.27A2.86,2.86,0,0,1,91.89,21a4.12,4.12,0,0,1,2.91-1.33A3.06,3.06,0,0,1,98,23V28.2h-1.9V23.05a1.59,1.59,0,0,0-1.42-1.75H94.42a2.8,2.8,0,0,0-2.07,1.12V28.2h-1.9V23.05A1.59,1.59,0,0,0,89,21.31H88.8a3,3,0,0,0-2.21,1.29v5.63H84.86Zm21.31-8.33h1.9l-3.91,9.46c-0.9,2.17-2.09,2.86-3.35,2.86a4.76,4.76,0,0,1-1.1-.14V30.46a2.86,2.86,0,0,0,.85.12c0.9,0,1.58-.64,2.07-1.9l0.17-.42-4-8.4h2l2.86,6.29ZM38.73,1.46V6.22a3.81,3.81,0,0,1,2.7-1.14,3.25,3.25,0,0,1,3.44,3.4v5.15H43V8.72a1.81,1.81,0,0,0-1.61-2h-0.3a2.93,2.93,0,0,0-2.32,1.39v5.52h-1.9V1.46h1.9ZM49.94,2.31v3h3V6.91h-3v3.81c0,1.1.5,1.46,1.58,1.46a4.49,4.49,0,0,0,1.69-.33v1.6A6.8,6.8,0,0,1,51,13.8a2.55,2.55,0,0,1-2.86-2.74V6.89H46.58V5.26h1.5V2.74Zm5.4,11.31V5.28H57v1A3.81,3.81,0,0,1,59.77,5a2.86,2.86,0,0,1,2.6,1.33A4.12,4.12,0,0,1,65.28,5,3.06,3.06,0,0,1,68.44,8.4v5.21h-1.9V8.46a1.59,1.59,0,0,0-1.42-1.75H64.89a2.8,2.8,0,0,0-2.07,1.12v5.78h-1.9V8.46A1.59,1.59,0,0,0,59.5,6.71H59.27A3,3,0,0,0,57.06,8v5.63H55.34ZM71.17,1.45H73V13.6H71.17V1.45ZM14.71,0H14.55L0,1.54V28.21l14.55,8.66,14.55-8.66V1.54Zm12.5,27.1L14.55,34.64,1.9,27.12V16.18l12.59,7.5V25L5.86,19.9v1.31l8.68,5.21v1.39L5.87,22.65V24l8.68,5.21,8.75-5.24V18.31L27.2,16V27.12Zm0-12.53-3.48,2-1.6,1L14.51,13v1.31L21,18.23H21l-0.14.09-1,.54-5.37-3.2V17l4.24,2.52-1,.67-3.2-1.9v1.31l2.1,1.24L14.5,22.1,2,14.65,14.51,7.11Zm0-1.32L14.49,5.76,1.91,13.25v-10L14.56,1.92,27.21,3.25v10h0Z" transform="translate(0 -0.02)"/></svg>
-					</a>	
-				</div>
-			</div>
-		</footer>
-	</div>
-	<script type="text/javascript" src="js/script.min.js"></script>
+    <svg style="display: none" xmlns="http://www.w3.org/2000/svg"><symbol id="icon-art" viewBox="0 0 48 48"><path d="M24 6C14.06 6 6 14.06 6 24s8.06 18 18 18c1.66 0 3-1.34 3-3 0-.78-.29-1.48-.78-2.01-.47-.53-.75-1.22-.75-1.99 0-1.66 1.34-3 3-3H32c5.52 0 10-4.48 10-10 0-8.84-8.06-16-18-16zM13 24c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm6-8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm10 0c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm6 8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/><path d="M0 0h48v48H0z" fill="none"/></symbol><symbol id="icon-computer" viewBox="0 0 141.732 141.732"><path d="M92.015 63.895H3.68V4.124h88.335v59.771zm3.681 1.865V2.258c0-1.036-.823-1.868-1.839-1.868H1.84A1.853 1.853 0 0 0 0 2.258V65.76c0 1.033.825 1.867 1.84 1.867h34.967v11.208H22.084c-1.017 0-1.839.834-1.839 1.868 0 1.031.824 1.868 1.839 1.868H73.613c1.017 0 1.841-.837 1.841-1.868 0-1.034-.825-1.868-1.841-1.868H58.89V67.627h34.968c1.017 0 1.838-.835 1.838-1.867m43.219-36.271H109.86v-5.898h29.055v5.898zm0-11.794H109.86v-5.9h29.055v5.9zm-16.817 35.583c0-1.286 1.027-2.324 2.29-2.324 1.265 0 2.293 1.038 2.293 2.324 0 1.285-1.028 2.326-2.293 2.326-1.262 0-2.29-1.042-2.29-2.326m.567 6.755c0-.966.771-1.749 1.723-1.749.953 0 1.725.782 1.725 1.749 0 .968-.772 1.754-1.725 1.754-.952-.001-1.723-.786-1.723-1.754m19.16 19.588V2.948c0-1.628-1.302-2.949-2.908-2.949h-29.054c-1.604 0-2.905 1.324-2.905 2.949V79.62c0 1.63 1.301 2.949 2.905 2.949h29.054c1.605.001 2.908-1.318 2.908-2.948"/></symbol><symbol id="icon-fb" viewBox="0 0 56.693 56.693"><path d="M40.43 21.739h-7.645v-5.014c0-1.883 1.248-2.322 2.127-2.322h5.395V6.125l-7.43-.029c-8.248 0-10.125 6.174-10.125 10.125v5.518h-4.77v8.53h4.77v24.137h10.033V30.269h6.77l.875-8.53z"/></symbol><symbol id="icon-hardy" viewBox="0 0 24 24"><path d="M13.9 10.8c-.8-1.8.5-4.4 4.3-4.4 2.7 0 3.8 2.1 3.8 4.1 0 3-3.2 4.2-3.2 4.2S17.2 20 12.3 20c-1.7 0-2.7-.2-3.4-.3-.7 0-1.3.3-1.7.3-.4 0-2.9-1.7-3.7-3.9-1.3-3.2-1.4-5.7-1.5-7-.1-1.8.2-3 1.1-3.8.6-.5 1.3-1.2 2.1-1.3.9-.1 1.3.3 1.9.8.5.4 1 1 1.3 1.4.1.2.1.5-.1.6-1.4 1.3-2.5 1.3-2.8 1.1-.5-.5-1-.2-.8.3.2.4.5 1.9 1.7 3 1.4 1.2 1.8 2.3 2.2 3.2.2-.9.9-4.2 5.3-3.6z"/></symbol><symbol id="icon-loupe" viewBox="0 0 421.61707 569.62811"><title>Magnifying Glass</title><path d="M289.697 96.042c39.144 67.799 15.915 154.493-51.884 193.637S83.319 305.593 44.175 237.794 28.261 83.301 96.06 44.157s154.493-15.914 193.637 51.885z" fill="#ccc"/><path d="M83.48 22.368C3.669 68.447-23.708 170.618 22.37 250.43c40.92 70.874 126.064 100.377 200.512 73.831 5.857 11.313 123.423 238.385 123.615 238.717 5.76 9.976 26.922 8.553 47.263-3.19s32.153-29.36 26.393-39.336L275.227 294.04c60.213-51.2 77.234-139.69 36.314-210.564C265.462 3.666 163.291-23.71 83.48 22.368zm12.6 21.824c67.764-39.124 154.514-15.88 193.637 51.885s15.88 154.513-51.884 193.637-154.514 15.88-193.638-51.885S28.316 83.316 96.08 44.192z"/><path d="M96.08 44.192C34.376 79.817 9.626 154.828 35.223 219.139c24.106.033 48.565-5.987 70.93-18.9 61.703-35.624 86.404-110.721 60.807-175.032-24.105-.032-48.516 6.073-70.88 18.985z" fill="#f2f2f2"/></symbol><symbol id="icon-mac" viewBox="0 0 48 48"><path clip-rule="evenodd" d="M43 35H29.195c.595 3.301 2.573 5.572 4.401 7H36a1 1 0 1 1 0 2H12a1 1 0 1 1 0-2h2.403c1.827-1.428 3.807-3.699 4.401-7H5a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4h38a4 4 0 0 1 4 4v23a4 4 0 0 1-4 4zm-25.603 7h13.205c-1.595-1.682-3.015-3.976-3.459-7h-6.287c-.444 3.024-1.864 5.318-3.459 7zM45 8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v19h42V8zm0 21H3v2a2 2 0 0 0 2 2h38a2 2 0 0 0 2-2v-2zm-21 3a1 1 0 1 1 0-2 1 1 0 1 1 0 2z" fill-rule="evenodd"/></symbol><symbol id="icon-mail" viewBox="0 0 32 32"><path d="M28 5H4a4 4 0 0 0-4 4v13a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4zM2 10.25l6.999 5.25L2 20.75v-10.5zM30 22c0 1.104-.898 2-2 2H4c-1.103 0-2-.896-2-2l7.832-5.875 4.368 3.277a3 3 0 0 0 3.599 0l4.369-3.277L30 22zm0-1.25l-7-5.25 7-5.25v10.5zm-12.801-2.148c-.35.263-.763.4-1.199.4s-.851-.139-1.2-.4L10.665 15.5l-.833-.625L2 9.001V9c0-1.103.897-2 2-2h24c1.102 0 2 .897 2 2l-12.801 9.602z"/></symbol><symbol id="icon-phone" viewBox="0 0 500 500"><path d="M335 443.2H167.7c-8.3 0-15-6.8-15-15V71.8c0-8.3 6.8-15 15-15H335c8.3 0 15 6.8 15 15v356.4c0 8.3-6.7 15-15 15z" stroke="#000" stroke-miterlimit="10"/><path fill="#FFF" d="M166.9 96.3h168.7v294H166.9z"/><path fill="#FFF" stroke="#FFF" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6" d="M219 82h64"/><circle cx="250.8" cy="416.8" fill="#FFF" r="16.5"/></symbol><symbol id="icon-skype" viewBox="0 0 56.693 56.693"><path d="M51.497 34.785c.354-1.624.539-3.303.539-5.029 0-12.938-10.488-23.427-23.428-23.427-1.365 0-2.703.119-4.008.342a13.503 13.503 0 0 0-7.227-2.087c-7.505 0-13.588 6.084-13.588 13.59 0 2.507.683 4.854 1.867 6.871a23.436 23.436 0 0 0-.474 4.711c0 12.941 10.488 23.43 23.429 23.43a23.57 23.57 0 0 0 4.289-.392 13.544 13.544 0 0 0 6.424 1.611c7.504 0 13.586-6.083 13.586-13.587a13.521 13.521 0 0 0-1.409-6.033zm-10.873 6.168c-1.082 1.533-2.684 2.749-4.76 3.611-2.055.854-4.518 1.288-7.32 1.288-3.365 0-6.188-.593-8.389-1.761-1.575-.849-2.872-1.999-3.858-3.424-.994-1.433-1.498-2.857-1.498-4.232 0-.857.328-1.602.976-2.211.642-.604 1.464-.91 2.446-.91.805 0 1.5.24 2.064.716.539.459 1 1.136 1.373 2.009.416.953.867 1.756 1.346 2.385.461.61 1.121 1.121 1.965 1.521.85.401 1.996.606 3.402.606 1.938 0 3.527-.413 4.721-1.229 1.168-.796 1.732-1.753 1.732-2.923 0-.925-.295-1.65-.902-2.223-.641-.597-1.48-1.058-2.502-1.379-1.064-.331-2.51-.691-4.297-1.066-2.434-.52-4.498-1.138-6.141-1.835-1.682-.716-3.036-1.708-4.026-2.946-1.005-1.261-1.516-2.837-1.516-4.695 0-1.77.535-3.367 1.591-4.741 1.047-1.367 2.578-2.431 4.548-3.157 1.943-.719 4.256-1.084 6.875-1.084 2.092 0 3.93.244 5.467.719 1.545.48 2.846 1.13 3.869 1.929 1.029.806 1.797 1.665 2.279 2.561.484.902.73 1.802.73 2.671 0 .838-.322 1.599-.961 2.264-.643.666-1.451 1.004-2.406 1.004-.867 0-1.547-.213-2.018-.627-.438-.391-.893-.995-1.398-1.864-.584-1.108-1.291-1.984-2.102-2.601-.789-.601-2.105-.902-3.914-.902-1.678 0-3.045.336-4.059 1.003-.977.639-1.453 1.374-1.453 2.245 0 .535.154.979.471 1.363.332.409.803.763 1.395 1.062.615.311 1.252.556 1.887.73.65.182 1.742.449 3.24.795 1.896.408 3.641.863 5.18 1.357 1.562.5 2.908 1.113 4.01 1.83a7.98 7.98 0 0 1 2.641 2.789c.633 1.125.953 2.513.953 4.127 0 1.926-.553 3.688-1.641 5.225z"/></symbol><symbol id="icon-social" viewBox="0 0 24 24"><path d="M9 9c0-1.7 1.3-3 3-3s3 1.3 3 3-1.3 3-3 3-3-1.3-3-3zm3 5c-4.6 0-6 3.3-6 3.3V19h12v-1.7S16.6 14 12 14z"/><circle cx="18.5" cy="8.5" r="2.5"/><path d="M18.5 13c-1.2 0-2.1.3-2.8.8 2.3 1.1 3.2 3 3.2 3.2v.1H23v-1.3c0-.1-1.1-2.8-4.5-2.8z"/><circle cx="18.5" cy="8.5" r="2.5"/><path d="M18.5 13c-1.2 0-2.1.3-2.8.8 2.3 1.1 3.2 3 3.2 3.2v.1H23v-1.3c0-.1-1.1-2.8-4.5-2.8z"/><g><circle cx="5.5" cy="8.5" r="2.5"/><path d="M5.5 13c1.2 0 2.1.3 2.8.8-2.3 1.1-3.2 3-3.2 3.2v.1H1v-1.3c0-.1 1.1-2.8 4.5-2.8z"/></g></symbol><symbol id="icon-study" viewBox="0 0 64 64"><path d="M62.848 16.853h-.057c-1.094.007-1.263-.946-1.282-1.386V8.558c0-.736-.599-1.334-1.334-1.334H40.423c-4.957 0-6.805 1.836-7.264 2.414l-.126.174-.001.002-.391.536h-.001c-.524.721-.981.413-1.201.178l-.748-.933-.369-.445c-.622-.653-2.242-1.927-5.452-1.927H3.827c-.737 0-1.335.598-1.335 1.334v6.822c0 1.193-.648 1.434-1.046 1.473h-.297c-.324.019-1.077.208-1.077 1.595v32.505c0 .798.647 1.444 1.444 1.444h19.205c6.127 0 8.797 2.312 9.598 3.197l.457.566h.001s1.225 1.385 2.516 0l.269-.315v.003l.003-.003.341-.4c.01-.012.093-.104.211-.226 1.024-.995 3.579-2.822 8.575-2.822h19.792c.798 0 1.443-.646 1.443-1.444v-32.82c.001-1.174-.852-1.273-1.079-1.279zm-4.315 29c0 .64-.535 1.159-1.201 1.159H41.049c-5.795 0-7.899 2.616-7.899 2.616l-.267.358-.125.175h-.001c-.553.75-1.365.006-1.369 0l-.375-.468c-.278-.333-2.407-2.682-7.558-2.682H6.665c-.663 0-1.198-.52-1.198-1.159v-34.64c0-.64.536-1.157 1.198-1.157h13.034c9.696 0 10.614 5.507 10.677 7.106v24.092c0 1.751.834 2.078 1.305 2.126h.701c.479-.048 1.242-.333 1.242-1.697v-24.83h-.009c.074-2.003.854-6.797 6.686-6.797h17.031c.666 0 1.201.517 1.201 1.157v34.641z" fill="#241F20"/></symbol><symbol id="icon-success" viewBox="0 0 24 24"><path d="M11 20a2.978 2.978 0 0 1-2.121-.879l-4-4C4.312 14.555 4 13.801 4 13s.312-1.555.879-2.122c1.133-1.133 3.109-1.133 4.242 0l1.188 1.188 3.069-5.523a2.999 2.999 0 0 1 5.507.632 2.975 2.975 0 0 1-.263 2.282l-5 9A3.015 3.015 0 0 1 11 20zm-4-8c-.268 0-.518.104-.707.293S6 12.732 6 13s.104.518.293.707l4 4a1.002 1.002 0 0 0 1.581-.221l5-9a.993.993 0 0 0 .088-.76.992.992 0 0 0-.478-.6 1.015 1.015 0 0 0-1.357.388l-4.357 7.841-3.062-3.062A.996.996 0 0 0 7 12z"/></symbol><symbol id="icon-target" viewBox="0 0 200.13248 200.02025"><title>Target</title><path d="M175.066 100.015c0 41.422-33.579 75-75 75s-75-33.578-75-75 33.579-75 75-75 75 33.58 75 75z" fill="none" stroke="#000" stroke-width="10.00015848"/><path d="M145.065 100.008c0 24.853-20.147 45-45 45s-45-20.147-45-45 20.148-45 45-45 45 20.148 45 45z" fill="none" stroke="#000" stroke-width="9.99982907"/><path d="M121.96 100.009c0 12.091-9.803 21.894-21.895 21.894s-21.893-9.803-21.893-21.894 9.802-21.894 21.893-21.894 21.894 9.802 21.894 21.894z"/><path d="M100.077 12.537v174.948M187.582 100.015H12.633" fill="none" stroke="#000" stroke-linecap="round" stroke-width="5"/></symbol><symbol id="icon-up-arrow" viewBox="0 0 32 32"><g clip-rule="evenodd" fill="#121313" fill-rule="evenodd"><path d="M8.594 8.885c-.366-.147.134.056 0 0z"/><path d="M15.307.263L8.279 7.251a.995.995 0 0 0 .734 1.709h13.98c.887.024 1.38-1.07.742-1.702L16.736.262a1.035 1.035 0 0 0-1.429.001zm5.276 6.713h-9.118l4.556-4.595 4.562 4.595zM13.024 12.976a3 3 0 1 0 6 0 3 3 0 0 0-6 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM13.024 20.976a3 3 0 1 0 6 0 3 3 0 0 0-6 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM13.024 28.976a3 3 0 1 0 6 0 3 3 0 0 0-6 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/></g></symbol><symbol id="icon-upgrade" viewBox="0 0 94.539 89.021"><path d="M53.813.014c3.185-.158 6.239 1.069 9.162 3.681l21.199 19.191 2.273-2.453 8.092 7.326-12.33 13.619-8.095-7.38 2.012-2.222-21.312-19.295c-2.467-2.199-5.528-3.208-9.185-3.027-2.424.12-4.755.69-6.99 1.708C43.399 3.996 48.457.28 53.813.014z"/><path d="M78.819 16.951L69.075 8.13l1.702-1.88 9.745 8.821zM29.478 50.429L3.583 77.775l12.422 11.246 24.689-28.476zM54.548 44.556l15.141-17.468-9.801-8.873-15.875 16.84z"/><path d="M83.13 75.237c.299-1.285.417-2.56.354-3.827-.185-3.727-1.645-6.83-4.381-9.306-2.735-2.476-5.984-3.621-9.749-3.434a15.268 15.268 0 0 0-3.776.677L52.189 47.278l.059-.068-10.644-9.6-.017.018-14.018-12.691c.265-1.246.365-2.503.303-3.77-.189-3.8-1.651-6.938-4.386-9.415-2.735-2.476-5.967-3.622-9.694-3.437-1.303.065-2.578.31-3.827.734l10.827 9.802-9.593 10.653L.37 19.703a13.83 13.83 0 0 0-.354 3.827c.185 3.728 1.645 6.83 4.381 9.306 2.735 2.476 5.967 3.622 9.694 3.436a14.17 14.17 0 0 0 4.042-.8l4.699 4.254.01-.011 30.596 27.594-.057.063 2.647 2.407a14.093 14.093 0 0 0-.398 4.047c.187 3.764 1.64 6.885 4.356 9.362 2.718 2.477 5.958 3.622 9.722 3.435a13.819 13.819 0 0 0 3.773-.732l-10.827-9.802 9.647-10.656 10.829 9.804z"/></symbol><symbol id="icon-vk" viewBox="0 0 30 30"><path clip-rule="evenodd" d="M16 24c1 0 1-1.441 1-2 0-1 1-2 2-2s2.715 1.715 4 3c1 1 1 1 2 1h3s2-.076 2-2c0-.625-.685-1.685-3-4-2-2-3.026-.967 0-5 1.843-2.456 3.184-4.681 2.954-5.323C29.734 7.064 24.608 6.088 24 7c-2 3-2.367 3.735-3 5-1 2-1.099 3-2 3-.909 0-1-1.941-1-3 0-3.306.479-5.644-1-6h-3c-1.61 0-3 1-3 1s-1.241.968-1 1c.298.04 2-.414 2 1v2s.009 4-1 4c-1 0-3-4-5-7-.785-1.177-1-1-2-1-1.072 0-1.999.042-3 .042-1 0-1.128.637-1 .958 2 5 3.437 8.14 7.237 12.096C10.722 23.725 13.05 23.918 15 24c.5.021 0 0 1 0z" fill-rule="evenodd"/></symbol><symbol id="logo-htmlacademy" viewBox="0 0 107.622 36.69"><path d="M103.727 29.189c-.899 2.16-2.074 2.886-3.336 2.886a4.67 4.67 0 0 1-1.089-.138v-1.572c.277.086.571.121.847.121.899 0 1.573-.64 2.057-1.936l.173-.415-3.941-8.365h1.971l2.799 6.256 2.472-6.256h1.935l-3.888 9.419zm-8.054-6.256c0-1.072-.64-1.745-1.642-1.745-.916 0-1.625.604-2.057 1.123.018.19.035.38.035.57v5.185H90.16v-5.133c0-1.072-.64-1.745-1.642-1.745-1.002 0-1.763.725-2.195 1.278v5.6h-1.849v-8.295h1.642v1.036c.449-.501 1.417-1.261 2.765-1.261 1.244 0 2.108.518 2.592 1.33.726-.725 1.694-1.33 2.904-1.33 2.194 0 3.145 1.624 3.145 3.335v5.185h-1.849v-5.133zm-19.322 1.676c.208 1.487 1.659 2.109 3.18 2.109a6.07 6.07 0 0 0 2.627-.588v1.591c-.76.363-1.815.57-2.973.57-2.54 0-4.701-1.452-4.701-4.373 0-3.007 2.282-4.372 4.2-4.372 3.301 0 4.442 2.661 3.906 5.063h-6.239zm2.42-3.525c-1.245 0-2.368.743-2.437 2.143h4.597c.104-.726-.346-2.143-2.16-2.143zm-7.743 5.669c-.64.812-1.625 1.538-3.18 1.538-2.506 0-4.113-1.988-4.113-4.373 0-2.385 1.607-4.372 4.113-4.372 1.452 0 2.419.639 2.99 1.296v-4.874h1.849v12.098h-1.659v-1.313zm-.208-3.855c-.397-.898-1.347-1.728-2.644-1.728-1.486 0-2.575 1.124-2.575 2.748s1.089 2.748 2.575 2.748c1.297 0 2.247-.829 2.644-1.746v-2.022zm.018-21.455h1.849v12.098h-1.849V1.443zm-4.555 6.965c0-1.071-.639-1.745-1.642-1.745-.915 0-1.624.605-2.056 1.123.017.19.034.38.034.57v5.185H60.77V8.408c0-1.071-.639-1.745-1.642-1.745-1.002 0-1.763.725-2.195 1.279v5.599h-1.849V5.246h1.642v1.036c.449-.501 1.417-1.261 2.765-1.261 1.245 0 2.109.518 2.592 1.331.726-.726 1.694-1.331 2.904-1.331 2.195 0 3.146 1.624 3.146 3.335v5.185h-1.85V8.408zm-8.494 12.745a7.398 7.398 0 0 0-2.99.639v-1.693c.657-.225 1.85-.553 3.18-.553 2.351 0 3.837 1.123 3.837 3.629v2.973c0 .466.277.605.605.605.19 0 .38-.053.553-.104v1.33c-.346.139-.76.208-1.175.208-.761 0-1.365-.294-1.659-.968-.813.657-1.832 1.072-3.128 1.072-1.504 0-2.904-.83-2.904-2.541 0-2.125 1.971-2.782 3.699-2.782.708 0 1.503.103 2.16.242v-.294c0-1.037-.76-1.763-2.178-1.763zm.381 3.111c-1.055 0-2.161.328-2.161 1.365 0 .812.726 1.227 1.556 1.227.881 0 1.745-.329 2.402-.985v-1.4c-.501-.103-1.21-.207-1.797-.207zM47.878 11.018V6.87h-1.486V5.246h1.486V2.739l1.832-.449v2.956h3.007V6.87H49.71v3.802c0 1.089.501 1.452 1.573 1.452.605 0 1.158-.121 1.676-.328v1.59c-.622.224-1.417.362-2.229.362-1.608 0-2.852-.794-2.852-2.73zm2.428 8.528c.933 0 1.832.207 2.558.639v1.694c-.605-.432-1.452-.691-2.299-.691-1.469 0-2.955.777-2.955 2.73 0 1.884 1.434 2.731 2.921 2.731.881 0 1.763-.259 2.419-.639v1.71c-.795.38-1.693.571-2.748.571-2.212 0-4.476-1.348-4.476-4.303 0-3.094 2.368-4.442 4.58-4.442zm-8.175 7.673c-.812.657-1.831 1.072-3.128 1.072-1.503 0-2.903-.83-2.903-2.541 0-2.125 1.97-2.782 3.698-2.782.709 0 1.504.103 2.161.242v-.294c0-1.037-.761-1.763-2.178-1.763a7.394 7.394 0 0 0-2.99.639v-1.693c.657-.225 1.849-.553 3.18-.553 2.351 0 3.837 1.123 3.837 3.629v2.973c0 .466.276.605.605.605.19 0 .38-.053.553-.104v1.33a3.217 3.217 0 0 1-1.175.208c-.761 0-1.366-.294-1.66-.968zm-.172-2.748c-.502-.103-1.21-.207-1.798-.207-1.054 0-2.16.328-2.16 1.365 0 .812.726 1.227 1.555 1.227.882 0 1.746-.329 2.403-.985v-1.4zm.838-15.821c0-1.348-.83-1.987-1.936-1.987-1.054 0-1.849.708-2.316 1.382v5.496h-1.849V1.443h1.849v4.718a3.778 3.778 0 0 1 2.679-1.14c2.091 0 3.422 1.417 3.422 3.387v5.133h-1.849V8.65zM-.001 28.067V1.519L14.483.001l.152.016 14.332 1.502v26.548l-14.484 8.618-14.484-8.618zM27.072 3.226L14.483 1.905 1.894 3.226v9.958l12.518-7.453V5.73l.002.001.001-.001v.001l12.657 7.462V3.226zM14.446 18.237l3.19 1.879.024-.014.997-.667-4.224-2.511.013-1.313 5.351 3.183.92-.542.14-.083.057-.034-6.481-3.854.013-1.312 7.582 4.51 1.59-.936 3.444-2.03-12.65-7.372V7.14L1.921 14.648l12.473 7.414 2.133-1.28-2.094-1.233.013-1.312zm12.626-2.312l-3.883 2.319v4.288l.01-.006v1.319l-8.716 5.215-8.633-5.189.012-1.312 8.631 5.134-.021-1.388-8.634-5.189.013-1.313 8.599 5.118-.021-1.352-12.535-7.461v10.881l12.589 7.491 12.589-7.491V15.925z" class="cls-1"/></symbol></svg>
+    <header class="page-header">
+      <h1 class="page-header__title">Резюме на должность front-end developer</h1>
+      <div class="page-header__lang-switcher-container">
+        <span class="page-header__lang-switcher  page-header__lang-switcher--rus  page-header__lang-switcher--active">Rus</span>
+        <a class="page-header__lang-switcher  page-header__lang-switcher--eng" href="#">Eng</a>
+      </div>
+      <nav class="main-nav" id="menu">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a href="#about">О себе</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#education">Образование</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#skils">Навыки</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#personal-qualities">Личные качества</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#portfolio">Портфолио</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__footer-wrapper">
+        <div class="page-header__logo-block  page-header__logo-block--css">
+          <span class="page-header__logo-text">CSS3</span>
+        </div>
+        <div class="page-header__logo-block  page-header__logo-block--html">
+          <span class="page-header__logo-text">HTML5</span>
+        </div>
+        <div class="page-header__logo-block  page-header__logo-block--less">
+          <span class="page-header__logo-text">less</span>
+        </div>
+        <div class="page-header__logo-block  page-header__logo-block--gulp">
+          <span class="page-header__logo-text">Gulp</span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="about" id="about">
+        <h1 class="about__title">О себе</h1>
+        <div class="about__photo-wrapper">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-desktop@1x.jpg 1x, img/photo-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-tablet@1x.jpg 1x, img/photo-tablet@2x.jpg 2x">
+            <img src="img/photo-mobile@1x.jpg" srcset="img/photo-mobile@2x.jpg 2x" width="240" height="180" alt="Фото Тимофея">
+          </picture>
+        </div>
+        <div class="about__info-container">
+          <span class="about__name">Котловой Тимофей</span>
+          <span class="about__age">Возраст: 29</span>          
+        </div>
+      </article>
+      <article class="education" id="education">
+        <div class="education__header">
+          <h1 class="education__title">Образование</h1>
+          <span class="education__header-text">Выпускник</span>
+          <div class="education__logo-container">
+            <a class="education__logo" href="http://htmlacademy.ru">
+              HTML Academy
+              <svg class="education__htmlacademy-logo" width="200" height="76">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="education__intensive-container">
+          <a class="education__intensive  education__intensive--base" href="https://htmlacademy.ru/intensive/htmlcss">
+            <svg width="50" height="50">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mac"></use>
+            </svg>
+            <span>Базовый интенсив по HTML и CSS</span>
+          </a>
+          <a class="education__intensive  education__intensive--adaptive" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg width="50" height="50">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mac"></use>
+            </svg>
+            <span>Продвинутый интенсив по HTML и CSS</span>
+          </a>
+          <a class="education__intensive  education__intensive--adaptive" href="https://htmlacademy.ru/intensive/javascript">
+            <svg class="education__computer-icon" width="70" height="50">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-computer"></use>
+            </svg>
+            <span>Базовый интенсив по JavaScript</span>
+          </a>
+        </div>
+        <a class="education__up-arrow" href="#menu">
+          Стрелка вверх
+          <svg width="60" height="60">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-up-arrow"></use>
+          </svg>
+        </a>
+      </article>
+      <article class="skils" id="skils">
+        <h1 class="skils__title">Навыки</h1>
+        <ul class="skils__list">
+          <li class="skils__list-item">
+            <span>Знание HTML5 и CSS3</span>
+            <svg width="50" height="50">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-success"></use>
+            </svg>
+          </li>
+          <li class="skils__list-item">
+            <span>Разметка по методологии БЭМ</span>
+            <svg width="50" height="50">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-success"></use>
+            </svg>
+          </li>
+          <li class="skils__list-item">
+            <span>Адепт препроцессора Less</span>
+            <svg width="50" height="50">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-success"></use>
+            </svg>
+          </li>
+          <li class="skils__list-item">
+            <span>Автоматизация сборки проекта с использованием Gulp</span>
+            <svg width="50" height="50">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-success"></use>
+            </svg>
+          </li>
+          <li class="skils__list-item">
+            <span>Верстка на flex'ах, float'ах и inline-block'ах</span>
+            <svg width="50" height="50">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-success"></use>
+            </svg>
+          </li>
+          <li class="skils__list-item">
+            <span>Опыт работы с Git и GitHub</span>
+            <svg width="50" height="50">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-success"></use>
+            </svg>
+          </li>
+          <li class="skils__list-item">
+            <span>Навыки использования консоли</span>
+            <svg width="50" height="50">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-success"></use>
+            </svg>
+          </li>                  
+          <li class="skils__list-item">
+            <span>Навыки владения графическими редакторами</span>
+            <svg width="50" height="50">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-success"></use>
+            </svg>
+          </li>
+          <li class="skils__list-item">
+            <span>JavaScript, базовый уровень</span>
+            <svg width="50" height="50">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-success"></use>
+            </svg>
+          </li>  
+        </ul>
+        <a class="skils__up-arrow" href="#menu">
+          Стрелка вверх
+          <svg width="60" height="60">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-up-arrow"></use>
+          </svg>
+        </a>
+      </article>
+      <article class="personal-qualities" id="personal-qualities">
+        <h1 class="personal-qualities__title">Личные качества</h1>
+        <ul class="personal-qualities__list">
+          <li class="personal-qualities__list-item">
+            <svg width="40" height="30">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-target"></use>
+            </svg>
+            <span>Целеустремленный</span>
+          </li>          
+          <li class="personal-qualities__list-item">
+            <svg width="40" height="30">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-study"></use>
+            </svg>
+            <span>Обучаемый</span>
+          </li>
+          <li class="personal-qualities__list-item">
+            <svg width="40" height="30">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-upgrade"></use>
+            </svg>
+            <span>Совершенствующий</span>
+          </li>
+          <li class="personal-qualities__list-item">
+            <svg width="40" height="30">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-loupe"></use>
+            </svg>
+            <span>Внимательный</span>
+          </li>
+        </ul>
+        <a class="personal-qualities__up-arrow" href="#menu">
+          Стрелка вверх
+          <svg width="60" height="60">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-up-arrow"></use>
+          </svg>
+        </a>
+      </article>
+      <article class="portfolio" id="portfolio">
+        <h1 class="portfolio__title">Портфолио</h1>
+        <section class="portfolio__item">
+          <h2>Keksobooking</h2>
+          <a class="portfolio__item-image" href="#">
+          	<a class="portfolio__item-image" href="https://TimofeyKotlovoy.github.io/portfolio/keksobooking">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/Keksobooking-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/Keksobooking-tablet@1x.jpg">
+              <img src="img/Keksobooking-mobile@1x.jpg" srcset="img/Keksobooking-mobile@2x.jpg 2x" alt="Глейси" width="320" height="208">
+            </picture>
+          </a>
+          <p class="portfolio__info-text">Выпускной проект на Базовый интенсив JavaScript HTML Academy. Взят готовый макет, и при помощи JS задан функционал по поиску и размещению объявлений на карте.</p>
+          <div class="portfolio__btns-wrapper">
+            <a class="portfolio__github-btn" href="https://github.com/TimofeyKotlovoy/285057-keksobooking.git">Открыть репозиторий</a>
+            <a class="portfolio__page-btn" href="https://TimofeyKotlovoy.github.io/portfolio/keksobooking">Открыть страницу</a>
+          </div>
+          <a class="portfolio__up-arrow" href="#menu">
+            Стрелка вверх
+            <svg width="60" height="60">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-up-arrow"></use>
+            </svg>
+          </a>
+        </section>
+        <section class="portfolio__item">
+          <h2>Пластиковые окна</h2>
+          <a class="portfolio__item-image" href="#">
+          	<a class="portfolio__item-image" href="https://TimofeyKotlovoy.github.io/portfolio/plastic_windows">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/windows-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/windows-tablet@1x.jpg">
+              <img src="img/windows-mobile@1x.jpg" srcset="img/windows-mobile@2x.jpg 2x" width="320" height="208" alt="Седона">
+            </picture>
+          </a>
+          <p class="portfolio__info-text">Верстал как тестовое задание и для практики. Разметка по БЭМ, для сеток использованы Bootstrap, flex'ы и float'ы. Проект собирается и оптимизируется с помощью Gulp, использовал LESS для CSS.</p>
+          <div class="portfolio__btns-wrapper">
+            <a class="portfolio__github-btn" href="https://github.com/TimofeyKotlovoy/plastic_windows.git">Открыть репозиторий</a>
+            <a class="portfolio__page-btn" href="https://TimofeyKotlovoy.github.io/portfolio/plastic_windows">Открыть страницу</a>
+          </div>
+          <a class="portfolio__up-arrow" href="#menu">
+            Стрелка вверх
+            <svg width="60" height="60">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-up-arrow"></use>
+            </svg>
+          </a>
+        </section>
+        <section class="portfolio__item">
+          <h2>Седона</h2>
+          <a class="portfolio__item-image" href="https://TimofeyKotlovoy.github.io/portfolio/sedona">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/sedona-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/sedona-tablet@1x.jpg">
+              <img src="img/sedona-mobile@1x.jpg" srcset="img/sedona-mobile@2x.jpg 2x" width="320" height="208" alt="Седона">
+            </picture>
+          </a>
+          <p class="portfolio__info-text">Выпускной проект на Базовый интенсив HTML Academy. Двухстраничный макет фиксированной ширины 1200px. Кнопка "Поиск гостиницы" открывает форму поиска. Вторая страница &mdash; пункт меню "Гостиницы".</p>
+          <div class="portfolio__btns-wrapper">
+            <a class="portfolio__github-btn" href="https://github.com/TimofeyKotlovoy/285057-sedona.git">Открыть репозиторий</a>
+            <a class="portfolio__page-btn" href="https://TimofeyKotlovoy.github.io/portfolio/sedona">Открыть страницу</a>
+          </div>
+          <a class="portfolio__up-arrow" href="#menu">
+            Стрелка вверх
+            <svg width="60" height="60">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-up-arrow"></use>
+            </svg>
+          </a>
+        </section>        
+      </article>
+    </main>
+    <footer class="contacts" id="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <svg class="contacts__email-icon" width="38" height="37">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
+          </svg>
+          <span class="contacts__item-text">timofey1988@inbox.ru</span>
+        </li>
+        <li class="contacts__item">
+          <svg class="contacts__social-icon" width="40" height="40">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-social"></use>
+          </svg>
+          <a class="contacts__item-link" href="http://vk.com/timofeykotlovoy">
+            <svg class="contacts__vk-icon" width="40" height=40>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"></use>
+            </svg>
+            ВКонтакте
+          </a>          
+        </li>
+        <li class="contacts__item  contacts__item--skype">
+          <svg class="contacts__skype-icon" width="40" height="38">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-skype"></use>
+          </svg>
+          <span class="contacts__item-text">timofey_kotlovoy</span>
+        </li>
+        <li class="contacts__item">
+          <svg class="contacts__phone-icon" width="40" height="40">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use>
+          </svg>
+          <span class="contacts__item-text  contacts__item-text--phone">
+            +7 (916) 530-75-68
+          </span>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
-</html>	
+</html>
