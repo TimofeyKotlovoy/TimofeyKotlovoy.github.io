@@ -1,0 +1,93 @@
+.main-header {	
+	display: block;
+	background: @white;
+	width: 1146px;
+	// height: 214px;
+	margin: 0 auto;	
+
+	&__info {
+	display: inline-block;			
+	padding: 0px;
+	margin: 0px;	
+	}	
+
+	&__logo {
+	float: left;
+	padding-left: 25px;
+	padding-top: 16px;
+	}
+
+	&__cost {
+	float: left;
+	padding: 0px;
+	margin-top: 87px;	
+	}
+
+	&__cost-inner {
+	font-size: 23px;
+	font-weight: 500;		
+	color: #f36240;
+	text-decoration: underline solid #f36240;
+	padding-left: 288px;	
+	}
+
+	&__info-inner {
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	line-height: 9px;
+	}
+
+	&__schedule {
+	font-size: 16px;
+	padding-top: 59px;
+	padding-left: 142px;		
+	}
+
+	&__phone {
+	font-size: 31px;
+	padding-left: 73px;
+	}
+
+	&__navigation ul {
+	display: flex;
+	padding: 0px;
+	margin: 0px;
+	}
+
+	&__navigation li {
+	display: flex;
+  	flex-grow: 1;
+	font-size: 24px;
+  	line-height: 55px;
+  	text-align: center;
+  	border-right: 1px solid #5f6973;
+  	}
+
+	&__navigation li:last-child {
+	border-right: none;
+	}
+
+	&__navigation a {
+	color: #5f6973;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	}
+
+	&__navigation a:hover {
+	background-color: #7bc3d5;
+	color: @white;
+	}
+
+	&__navigation .active a {
+	position: relative;
+	background-color: #7bc3d5;
+	color: @white;
+	}
+
+	&__navigation .active a:hover {
+	background-color: #7bc3d5;
+	color: @white;
+	}
+}
