@@ -538,3 +538,101 @@ html {
   margin-top: 44px;
   margin-left: 154px;
 }
+.cost {
+  padding-top: 43px;
+  padding-left: 85px;
+}
+.cost__string {
+  float: left;
+  width: 73px;
+  height: 2px;
+  background-color: #e30a62;
+  margin-left: 5px;
+  margin-top: 11px;
+}
+.cost__text {
+  float: left;
+  color: #393185;
+  font-size: 19px;
+  font-weight: 900;
+  margin-left: 103px;
+  letter-spacing: 0.6px;
+}
+.cost__table {
+  margin-left: 185px;
+  padding-top: 33px;
+}
+table {
+  font-size: 12px;
+  border-collapse: collapse;
+  margin-top: 2px;
+  border: 1px solid #f2f7fb;
+}
+table tr:first-child {
+  background-color: #393185;  
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+table tr:nth-child(2n) {
+  background-color: #f2f7fb;  
+}
+table tr td {
+  width: 145px;
+  text-align: center;
+  padding-left: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+table tr:nth-child(n+5) td {  
+  padding-top: 11px;
+}
+table tr:first-child td{
+  padding-top: 17px;
+  padding-bottom: 19px;
+  padding-left: 23px;
+}
+table tr td:first-child{
+  width: 275px;
+  text-align: left;
+}
+table tr td:nth-child(n+3){
+  padding-left: 13px;
+}
+table tr td:nth-child(n+4){
+  padding-left: 5px;
+}
+table tr td:nth-child(n+5){
+  padding-left: 16px;
+}
+table tr:first-child td:nth-child(4){
+  padding-left: 6px;
+}
+table tr td:last-child{
+  width: 104px;
+  padding-left: 20px;
+}
+.cost__info {
+  margin-left: 186px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  padding-left: 22px;
+  width: 814px;
+  min-height: 50px;
+  border-bottom: 1px solid #e1eaf1;
+  }
+.cost__info-header {
+  color: #393185;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.cost__info-text {
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+.cost__info-text p {
+  font-size: 12px;
+  line-height: 20px;
+}
